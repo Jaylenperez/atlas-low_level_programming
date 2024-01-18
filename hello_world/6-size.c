@@ -1,20 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(void)
 {
-	// Compile for 32-bit architecture
-	system("gcc 6-size.c -m32 -o size32 2> /tmp/32");
+#ifdef __x86_64__
+    // Code specific to 64-bit architecture
+    printf("Size of a char: %lu byte(s)\n", sizeof(char));
+    printf("Size of an int: %lu byte(s)\n", sizeof(int));
+    printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+    printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+    printf("Size of a float: %lu byte(s)\n", sizeof(float));
+#else
+    // Code specific to 32-bit architecture
+    printf("Size of a char: %lu byte(s)\n", sizeof(char));
+    printf("Size of an int: %lu byte(s)\n", sizeof(int));
+    printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+    printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+    printf("Size of a float: %lu byte(s)\n", sizeof(float));
+#endif
 
-	// Run the compiled binary for 32-bit
-	system(".size32");
-
-	// Compile for 64-bit architecture
-	system("gcc 6-size.c -m64 -o size64 2> /tmp/64");
-
-	// Run the compiled binary for 64-bit
-	system("./size64");
-
-	// Return 0 to indicate successful execution
-	return 0;
+    return 0;
 }
