@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Description: Prints single-digit numbers of base 10 followed by a new line
  *
