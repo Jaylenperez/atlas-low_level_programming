@@ -8,27 +8,36 @@
  */
 void times_table(void)
 {
-	int i, j, result;
+	int i;
+        int j;
+        int result;
 
 	for (i = 0; i <= 9; i++)
 	{
-		result = i * j;
-
-		/* Print the result with proper formatting */
-		if (j == 0)
-			_putchar(result + '0');
-		else
+		for (j =0; j <= 9; j++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			result = i * j;
 
-			/* Adjust spacing for single-digit and double-digit results */
-			if (result < 10)
-				_putchar(' ');
+			/* Print the result with proper formatting */
+			if (j == 0)
+				_putchar(result + '0');
 			else
-				_putchar((result / 10) + '0');
-			_putchar((result % 10) + '0');
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				/**
+			 	* Adjust spacing for single-digit and double-
+			 	* digit results
+			 	*/
+
+				if (result < 10)
+					_putchar(' ');
+				else
+					_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
