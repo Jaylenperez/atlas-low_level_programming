@@ -2,13 +2,33 @@
 #include "main.h"
 
 /**
- * add - Adds two integers.
- * @a: The first integer.
- * @b: The second integer.
+ * print_to_98 - Print all natural numbers from n to 98, followed by a new line
+ * @n: The starting number.
  *
- * Return: The result of the addition.
+ * Return: None
  */
-int add(int a, int b)
+void print_to_98(int n)
 {
-	return a + b;
+	int i:
+	
+	if (n <= 98)
+	{
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+			if (i != 98)
+				printf(", ");
+		}
+	}
+	else
+	}
+		for (i = n; i >= 98; i--)
+		{
+			printf("%d", i);
+			if (i != 98)
+				printf(", ");
+		}
+	}
+
+	printf("\n");
 }
