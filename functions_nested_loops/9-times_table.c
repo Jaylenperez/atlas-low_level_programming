@@ -9,12 +9,12 @@
 void times_table(void)
 {
 	int i;
-        int j;
-        int result;
+	int j;
+	int result;
 
 	for (i = 0; i <= 9; i++)
 	{
-		for (j =0; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
 
@@ -27,9 +27,9 @@ void times_table(void)
 				_putchar(' ');
 
 				/**
-			 	* Adjust spacing for single-digit and double-
-			 	* digit results
-			 	*/
+				* Adjust spacing for single-digit and double-
+				* digit results
+				*/
 
 				if (result < 10)
 					_putchar(' ');
