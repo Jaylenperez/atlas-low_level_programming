@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_triangle - Prints a triangle pattern using '#' characters.
@@ -10,21 +9,27 @@
  */
 void print_triangle(int size)
 {
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		int i, j;
+    if (size <= 0)
+    {
+        _putchar('\n');
+    }
+    else
+    {
+        int i, j;
 
-		for (i = 0; i < size; i++)
-		{
-			for (j = 0; j <= i; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
+        for (i = 0; i < size; i++)
+        {
+            // Print spaces to align the triangle
+            for (j = size - i; j > 1; j--)
+            {
+                _putchar(' ');
+            }
+            // Print '#' characters for the triangle
+            for (j = 0; j <= i; j++)
+            {
+                _putchar('#');
+            }
+            _putchar('\n');
+        }
+    }
 }
