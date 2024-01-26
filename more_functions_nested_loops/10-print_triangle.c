@@ -5,7 +5,7 @@
  * @size: Size of the triangle.
  *
  * Description: This function prints a triangle pattern made of '#' characters
- * with a given size. If size is 0 or less, only a newline character is printed.
+ * with a given size. If size is 0 or less, only a newline character is printed
  */
 void print_triangle(int size)
 {
