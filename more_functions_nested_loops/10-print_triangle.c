@@ -9,27 +9,27 @@
  */
 void print_triangle(int size)
 {
-    if (size <= 0)
-    {
-        _putchar('\n');
-    }
-    else
-    {
-        int i, j;
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		int row, space, hash;
 
-        for (i = 0; i < size; i++)
-        {
-            // Print spaces to align the triangle
-            for (j = size - i; j > 1; j--)
-            {
-                _putchar(' ');
-            }
-            // Print '#' characters for the triangle
-            for (j = 0; j <= i; j++)
-            {
-                _putchar('#');
-            }
-            _putchar('\n');
-        }
-    }
+		for (row = 0; row < size; row++)
+		{
+			for (space = 0; space < size - row - 1; space++)
+			{
+				_putchar(' ');
+			}
+
+			for (hash = 0; hash < row + 1; hash++)
+			{
+				_putchar('#');
+			}
+
+			_putchar('\n');
+		}
+	}
 }
