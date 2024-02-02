@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strcpy - Copies up to n characters from the source string to the
+ * _strncpy - Copies up to n characters from the source string to the
  * destination string
  * @dest: The destination string
  * @src: The source string
