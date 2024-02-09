@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 /**
  * _sqrt_helper - recursive helper function to find the square root
  * @n: the number to find the square root of
- * @i; the current divisor to check
+ * @i: the current divisor to check
  *
  * Return: the natural square root of n, or -1 if n does not have a natural sr
  */
