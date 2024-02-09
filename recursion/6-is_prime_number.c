@@ -10,12 +10,12 @@
  */
 int is_prime_helper(int n, int i)
 {
-        if (i == n)
-                return (1);
-        else if (n % i == 0)
-                return (0);
-        else
-                return (is_prime_helper(n, i + 1));
+	if (i == n)
+		return (1);
+	else if (n % i == 0)
+		return (0);
+	else
+		return (is_prime_helper(n, i + 1));
 }
 
 /**
