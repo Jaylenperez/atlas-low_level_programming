@@ -12,7 +12,7 @@ void print_args(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		int j;
+		int j:
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			putchar(argv[i][j]);
