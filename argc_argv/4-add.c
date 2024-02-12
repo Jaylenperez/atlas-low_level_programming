@@ -10,7 +10,7 @@
  */
 int is_positive_number(char *str)
 {
-	if(*str == '\0')
+	if (*str == '\0')
 		return (0);
 
 	while (*str != '\0')
@@ -68,5 +68,5 @@ int main(int argc, char *argv[])
 	else if (result != 1)
 		printf("%d\n", result);
 
-	return result != 0;
+	return (result != 0);
 }
