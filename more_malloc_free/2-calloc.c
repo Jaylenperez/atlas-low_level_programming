@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/* Check for zero values */
 	if (nmemb == 0 || size == 0)
-		returni (NULL);
+		return (NULL);
 
 	/* Calculates total size to allocate */
 	total_size = nmemb * size;
