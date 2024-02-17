@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/* Check for zero values */
 	if (nmemb == 0 || size == 0)
-		return NULL;
+		returni (NULL);
 
 	/* Calculates total size to allocate */
 	total_size = nmemb * size;
@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/* Check for malloc failure */
 	if (ptr == NULL)
-		return NULL;
+		return (NULL);
 
 	/* Set allocated memory to zero */
 	memset(ptr, 0, total_size);
