@@ -16,7 +16,7 @@ void print_filename(void)
 		filename++;
 	}
 	
-	_putchar('\n'); // Ensure newline at the end of the file
+	_putchar('\n');
 }
 
 /**
