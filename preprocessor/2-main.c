@@ -4,6 +4,8 @@
  * print_filename - Prints the name of the current source file followed
  * by a new line.
  */
+int _putchar(char c);
+
 void print_filename(void)
 {
 	char *filename = __FILE__;
@@ -14,7 +16,7 @@ void print_filename(void)
 		filename++;
 	}
 	
-	_putchar('\n');
+	_putchar('\n'); // Ensure newline at the end of the file
 }
 
 /**
