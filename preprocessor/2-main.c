@@ -15,7 +15,7 @@ void print_filename(void)
 		write(1, filename, 1);
 		filename++;
 	}
-	
+
 	_putchar('\n');
 }
 
