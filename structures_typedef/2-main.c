@@ -15,3 +15,4 @@ int main(void)
     my_dog.owner = "Bob";
     print_dog(&my_dog);
     return (0);
+}
