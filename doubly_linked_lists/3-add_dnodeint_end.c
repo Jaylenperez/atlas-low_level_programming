@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - Adds a new node to the end of a dlistint_t list
+ * add_dnodeint_end - Adds a new node to the end of a dlistint_t list
  * @head: Double pointer to the head of the list
  * @n: The integer value to be added to the new node
  *
