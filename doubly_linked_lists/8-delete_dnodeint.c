@@ -8,7 +8,7 @@
  * @index: The index of the node to be deleted, starting from 0
  *
  *Return: 1 if the node at the specified index was successfully deleted,
- *         -1 if the operation failed (e.g., the list is empty or the index is out of bounds)
+ *         -1 if the operation failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
