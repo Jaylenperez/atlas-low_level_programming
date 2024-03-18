@@ -1,17 +1,17 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 
-typedef struct hash_table_item
+typedef struct hash_node_s
 {
     char *key;
     void *value;
-} hash_table_item_t;
+    struct hash_node_s *next;
+} hash_node_t;
 
-typedef struct hash_table
+typedef struct hash_table_s
 {
     unsigned long int size;
-    unsigned long int count;
-    hash_table_item_t **items;
+    hash_node_t **array;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
