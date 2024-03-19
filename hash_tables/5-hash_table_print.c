@@ -24,7 +24,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 			if (!first_pair)
 				printf(", ");
-			printf("'%s': '%s", node->key, (char *)node->value);
+			printf("'%s': '%s'", node->key, (char *)node->value);
 			first_pair = 0;
 			node = node->next;
 		}
